@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: http://chebyasno21.itsinsta.site//sitemap.xml
