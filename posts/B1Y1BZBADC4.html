@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="chebyasno21" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="жк ясная пол яна">
-								<a href="../tags/./zhk-yasnaya-pol-yana.html">
-									<div class="stories__slide-pic"><img src="../img/og/zhk-yasnaya-pol-yana.png" alt="жк ясная пол яна" /></div>
-									<div class="stories__slide-txt">жк ясная пол яна</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="жк ясная пол яна">
+										<a href="../tags/./zhk-yasnaya-pol-yana.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/zhk-yasnaya-pol-yana.png);"></div>
+											<div class="stories__slide-txt">жк ясная пол яна</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ясно21">
+										<a href="../tags/./yasno21.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/yasno21.png);"></div>
+											<div class="stories__slide-txt">ясно21</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="недвижимость">
+										<a href="../tags/./nedvizhimost-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nedvizhimost-.png);"></div>
+											<div class="stories__slide-txt">недвижимость</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="жилье ясная пол яна">
+										<a href="../tags/./zhil-e-yasnaya-pol-yana.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/zhil-e-yasnaya-pol-yana.png);"></div>
+											<div class="stories__slide-txt">жилье ясная пол яна</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры">
+										<a href="../tags/./kvartiry.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry.png);"></div>
+											<div class="stories__slide-txt">квартиры</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уютные дома чебоксары">
+										<a href="../tags/./uyutnye-doma-cheboksary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/uyutnye-doma-cheboksary.png);"></div>
+											<div class="stories__slide-txt">уютные дома чебоксары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры чебоксары">
+										<a href="../tags/./kvartiry-cheboksary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-cheboksary.png);"></div>
+											<div class="stories__slide-txt">квартиры чебоксары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="новостройки">
+										<a href="../tags/./novostroyki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/novostroyki.png);"></div>
+											<div class="stories__slide-txt">новостройки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры нюр">
+										<a href="../tags/./kvartiry-nyur.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-nyur.png);"></div>
+											<div class="stories__slide-txt">квартиры нюр</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="честринвест">
+										<a href="../tags/./chestrinvest.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/chestrinvest.png);"></div>
+											<div class="stories__slide-txt">честринвест</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры с ремонтом">
+										<a href="../tags/./kvartiry-s-remontom.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-s-remontom.png);"></div>
+											<div class="stories__slide-txt">квартиры с ремонтом</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры с отд елкой">
+										<a href="../tags/./kvartiry-s-otd-elkoy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-s-otd-elkoy.png);"></div>
+											<div class="stories__slide-txt">квартиры с отд елкой</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="доступноеж илье">
+										<a href="../tags/./dostupnoezh-il-e.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dostupnoezh-il-e.png);"></div>
+											<div class="stories__slide-txt">доступноеж илье</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="покупка квартиры">
+										<a href="../tags/./pokupka-kvartiry.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/pokupka-kvartiry.png);"></div>
+											<div class="stories__slide-txt">покупка квартиры</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="строительство чебоксары">
+										<a href="../tags/./stroitel-stvo-cheboksary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/stroitel-stvo-cheboksary.png);"></div>
+											<div class="stories__slide-txt">строительство чебоксары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="недвижимость ипотека">
+										<a href="../tags/./nedvizhimost--ipoteka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nedvizhimost--ipoteka.png);"></div>
+											<div class="stories__slide-txt">недвижимость ипотека</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="втб">
+										<a href="../tags/./vtb.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/vtb.png);"></div>
+											<div class="stories__slide-txt">втб</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="доступная ипотека">
+										<a href="../tags/./dostupnaya-ipoteka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dostupnaya-ipoteka.png);"></div>
+											<div class="stories__slide-txt">доступная ипотека</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры ипотека">
+										<a href="../tags/./kvartiry-ipoteka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-ipoteka.png);"></div>
+											<div class="stories__slide-txt">квартиры ипотека</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="сбербанк">
+										<a href="../tags/./sberbank.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/sberbank.png);"></div>
+											<div class="stories__slide-txt">сбербанк</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бауманскийлес">
+										<a href="../tags/./baumanskiyles.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/baumanskiyles.png);"></div>
+											<div class="stories__slide-txt">бауманскийлес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="лесу дома">
+										<a href="../tags/./lesu-doma.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/lesu-doma.png);"></div>
+											<div class="stories__slide-txt">лесу дома</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартира випотеку">
+										<a href="../tags/./kvartira-vipoteku.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartira-vipoteku.png);"></div>
+											<div class="stories__slide-txt">квартира випотеку</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартиры трейдин">
+										<a href="../tags/./kvartiry-treydin.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartiry-treydin.png);"></div>
+											<div class="stories__slide-txt">квартиры трейдин</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="чебоксары">
+										<a href="../tags/./cheboksary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/cheboksary.png);"></div>
+											<div class="stories__slide-txt">чебоксары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="чувашия">
+										<a href="../tags/./chuvashiya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/chuvashiya.png);"></div>
+											<div class="stories__slide-txt">чувашия</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="застройщик">
+										<a href="../tags/./zastroyshchik.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/zastroyshchik.png);"></div>
+											<div class="stories__slide-txt">застройщик</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="квартира мечты">
+										<a href="../tags/./kvartira-mechty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kvartira-mechty.png);"></div>
+											<div class="stories__slide-txt">квартира мечты</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="продажа квартир">
+										<a href="../tags/./prodazha-kvartir.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prodazha-kvartir.png);"></div>
+											<div class="stories__slide-txt">продажа квартир</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="нюр">
+										<a href="../tags/./nyur.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nyur.png);"></div>
+											<div class="stories__slide-txt">нюр</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ясно21">
-								<a href="../tags/./yasno21.html">
-									<div class="stories__slide-pic"><img src="../img/og/yasno21.png" alt="ясно21" /></div>
-									<div class="stories__slide-txt">ясно21</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="недвижимость">
-								<a href="../tags/./nedvizhimost-.html">
-									<div class="stories__slide-pic"><img src="../img/og/nedvizhimost-.png" alt="недвижимость" /></div>
-									<div class="stories__slide-txt">недвижимость</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="жилье ясная пол яна">
-								<a href="../tags/./zhil-e-yasnaya-pol-yana.html">
-									<div class="stories__slide-pic"><img src="../img/og/zhil-e-yasnaya-pol-yana.png" alt="жилье ясная пол яна" /></div>
-									<div class="stories__slide-txt">жилье ясная пол яна</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры">
-								<a href="../tags/./kvartiry.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry.png" alt="квартиры" /></div>
-									<div class="stories__slide-txt">квартиры</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уютные дома чебоксары">
-								<a href="../tags/./uyutnye-doma-cheboksary.html">
-									<div class="stories__slide-pic"><img src="../img/og/uyutnye-doma-cheboksary.png" alt="уютные дома чебоксары" /></div>
-									<div class="stories__slide-txt">уютные дома чебоксары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры чебоксары">
-								<a href="../tags/./kvartiry-cheboksary.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-cheboksary.png" alt="квартиры чебоксары" /></div>
-									<div class="stories__slide-txt">квартиры чебоксары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="новостройки">
-								<a href="../tags/./novostroyki.html">
-									<div class="stories__slide-pic"><img src="../img/og/novostroyki.png" alt="новостройки" /></div>
-									<div class="stories__slide-txt">новостройки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры нюр">
-								<a href="../tags/./kvartiry-nyur.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-nyur.png" alt="квартиры нюр" /></div>
-									<div class="stories__slide-txt">квартиры нюр</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="честринвест">
-								<a href="../tags/./chestrinvest.html">
-									<div class="stories__slide-pic"><img src="../img/og/chestrinvest.png" alt="честринвест" /></div>
-									<div class="stories__slide-txt">честринвест</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры с ремонтом">
-								<a href="../tags/./kvartiry-s-remontom.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-s-remontom.png" alt="квартиры с ремонтом" /></div>
-									<div class="stories__slide-txt">квартиры с ремонтом</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры с отд елкой">
-								<a href="../tags/./kvartiry-s-otd-elkoy.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-s-otd-elkoy.png" alt="квартиры с отд елкой" /></div>
-									<div class="stories__slide-txt">квартиры с отд елкой</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="доступноеж илье">
-								<a href="../tags/./dostupnoezh-il-e.html">
-									<div class="stories__slide-pic"><img src="../img/og/dostupnoezh-il-e.png" alt="доступноеж илье" /></div>
-									<div class="stories__slide-txt">доступноеж илье</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="покупка квартиры">
-								<a href="../tags/./pokupka-kvartiry.html">
-									<div class="stories__slide-pic"><img src="../img/og/pokupka-kvartiry.png" alt="покупка квартиры" /></div>
-									<div class="stories__slide-txt">покупка квартиры</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="строительство чебоксары">
-								<a href="../tags/./stroitel-stvo-cheboksary.html">
-									<div class="stories__slide-pic"><img src="../img/og/stroitel-stvo-cheboksary.png" alt="строительство чебоксары" /></div>
-									<div class="stories__slide-txt">строительство чебоксары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="недвижимость ипотека">
-								<a href="../tags/./nedvizhimost--ipoteka.html">
-									<div class="stories__slide-pic"><img src="../img/og/nedvizhimost--ipoteka.png" alt="недвижимость ипотека" /></div>
-									<div class="stories__slide-txt">недвижимость ипотека</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="втб">
-								<a href="../tags/./vtb.html">
-									<div class="stories__slide-pic"><img src="../img/og/vtb.png" alt="втб" /></div>
-									<div class="stories__slide-txt">втб</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="доступная ипотека">
-								<a href="../tags/./dostupnaya-ipoteka.html">
-									<div class="stories__slide-pic"><img src="../img/og/dostupnaya-ipoteka.png" alt="доступная ипотека" /></div>
-									<div class="stories__slide-txt">доступная ипотека</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры ипотека">
-								<a href="../tags/./kvartiry-ipoteka.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-ipoteka.png" alt="квартиры ипотека" /></div>
-									<div class="stories__slide-txt">квартиры ипотека</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="сбербанк">
-								<a href="../tags/./sberbank.html">
-									<div class="stories__slide-pic"><img src="../img/og/sberbank.png" alt="сбербанк" /></div>
-									<div class="stories__slide-txt">сбербанк</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бауманскийлес">
-								<a href="../tags/./baumanskiyles.html">
-									<div class="stories__slide-pic"><img src="../img/og/baumanskiyles.png" alt="бауманскийлес" /></div>
-									<div class="stories__slide-txt">бауманскийлес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="лесу дома">
-								<a href="../tags/./lesu-doma.html">
-									<div class="stories__slide-pic"><img src="../img/og/lesu-doma.png" alt="лесу дома" /></div>
-									<div class="stories__slide-txt">лесу дома</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартира випотеку">
-								<a href="../tags/./kvartira-vipoteku.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartira-vipoteku.png" alt="квартира випотеку" /></div>
-									<div class="stories__slide-txt">квартира випотеку</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартиры трейдин">
-								<a href="../tags/./kvartiry-treydin.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartiry-treydin.png" alt="квартиры трейдин" /></div>
-									<div class="stories__slide-txt">квартиры трейдин</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="чебоксары">
-								<a href="../tags/./cheboksary.html">
-									<div class="stories__slide-pic"><img src="../img/og/cheboksary.png" alt="чебоксары" /></div>
-									<div class="stories__slide-txt">чебоксары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="чувашия">
-								<a href="../tags/./chuvashiya.html">
-									<div class="stories__slide-pic"><img src="../img/og/chuvashiya.png" alt="чувашия" /></div>
-									<div class="stories__slide-txt">чувашия</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="застройщик">
-								<a href="../tags/./zastroyshchik.html">
-									<div class="stories__slide-pic"><img src="../img/og/zastroyshchik.png" alt="застройщик" /></div>
-									<div class="stories__slide-txt">застройщик</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="нюр">
-								<a href="../tags/./nyur.html">
-									<div class="stories__slide-pic"><img src="../img/og/nyur.png" alt="нюр" /></div>
-									<div class="stories__slide-txt">нюр</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="продажа квартир">
-								<a href="../tags/./prodazha-kvartir.html">
-									<div class="stories__slide-pic"><img src="../img/og/prodazha-kvartir.png" alt="продажа квартир" /></div>
-									<div class="stories__slide-txt">продажа квартир</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="квартира мечты">
-								<a href="../tags/./kvartira-mechty.html">
-									<div class="stories__slide-pic"><img src="../img/og/kvartira-mechty.png" alt="квартира мечты" /></div>
-									<div class="stories__slide-txt">квартира мечты</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -334,17 +343,26 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/09fdc1e5572ab4e882bb83276ec6e11b/5E2E92E1/t51.2885-15/e35/66829841_368087834086024_5638241736398552788_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3dd2c29b56a09075bb44502dbd096f1a/5E1F75FB/t51.2885-15/e35/67725281_140177860529406_8051855547380638499_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/09fdc1e5572ab4e882bb83276ec6e11b/5E2E92E1/t51.2885-15/e35/66829841_368087834086024_5638241736398552788_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3dd2c29b56a09075bb44502dbd096f1a/5E1F75FB/t51.2885-15/e35/67725281_140177860529406_8051855547380638499_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p></p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/B1Y1BZBADC4/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -370,38 +388,38 @@
 							<a href="./xxxxxxxkhotite-uznat--tsenu---nazhmite-3-raza-na-fotoxxxxxxx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>84</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>88</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/75479c3d9594510b80759ee3418142d0/5E26FB23/t51.2885-15/e35/72653261_165758831172821_415652468573250720_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="❤️❤️❤️ Хотите узнать цену - нажмите 3 раза на фото ❤️❤️❤️">
 								</div>
 								<div class="article-more__item-name">❤️❤️❤️ Хотите узнать цену - нажмите 3 раза на фото ❤️❤️❤️</div>
 							</a>
-							<a href="./xu-prirody-net-plokhoy-pogodyx-vsyakaya-pogoda-x-blagodat-.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>62</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6b64d36e240650fc9fef4dd308122330/5E294C24/t51.2885-15/e35/72978753_2168334013272888_7844851804787307401_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="«У природы нет плохой погоды, всякая погода – благодать!">
-								</div>
-								<div class="article-more__item-name">«У природы нет плохой погоды, всякая погода – благодать!</div>
-							</a>
-							<a href="./net-odinakovykh-mikrorayonovx-u-kazhdogo-svoya-izyuminka.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>53</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/4fe34e2e8ced789ba8d0959f70fdf023/5E242D4E/t51.2885-15/e35/71079984_103733894324304_5456119635639240263_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Нет одинаковых микрорайонов, у каждого своя изюминка.">
-								</div>
-								<div class="article-more__item-name">Нет одинаковых микрорайонов, у каждого своя изюминка.</div>
-							</a>
 							<a href="./vsem-khoroshikh-vykhodnykh.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>52</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>58</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/95d2ba7cc92aa19f5338e82a977d894b/5E2C50CE/t51.2885-15/e35/70499576_2541023252622726_7692485685506168124_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt="Всем хороших выходных!">
 								</div>
 								<div class="article-more__item-name">Всем хороших выходных!</div>
+							</a>
+							<a href="./na-mechtu-mozhno-nakopit-.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>55</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6cd2c82d360080cb69657263c07a7bdd/5E651DAA/t51.2885-15/e35/71520433_503095903873694_5492323757046880930_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="На мечту можно накопить.">
+								</div>
+								<div class="article-more__item-name">На мечту можно накопить.</div>
+							</a>
+							<a href="./est--lyudix-kotorye-edut-za-gorodx-chtoby-nasladit-sya-svezhim-vozdukhomx-krasotoy-i-spokoystviem-prirody.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>54</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5927b50a9a3ad8f77f5d499e0b93d6bb/5E365170/t51.2885-15/e35/72625830_186555145716993_5084770982149731748_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Есть люди, которые едут за город, чтобы насладиться свежим воздухом, красотой и спокойствием природы.">
+								</div>
+								<div class="article-more__item-name">Есть люди, которые едут за город, чтобы насладиться свежим воздухом, красотой и спокойствием природы.</div>
 							</a>
 							<a href="./primerit--kvartiru.html" class="article-more__item">
 								<div class="article-more__item-pic">
@@ -421,23 +439,23 @@
 								</div>
 								<div class="article-more__item-name">Покупка квартиры - это всегда важное и непростое решение для любой семьи.</div>
 							</a>
-							<a href="./v-cheboksarskie-kvartiry-otoplenie-nachali-davat--uzhe-v-kontse-sentyabrya.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>36</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/f31c74dec01b95f489c0277088f3223c/5E1E2FBD/t51.2885-15/e35/69952962_397113771190298_8294194830171718704_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="В чебоксарские квартиры отопление начали давать уже в конце сентября.">
-								</div>
-								<div class="article-more__item-name">В чебоксарские квартиры отопление начали давать уже в конце сентября.</div>
-							</a>
 							<a href="./pri-pokupke-nedvizhimosti-osoboe-vnimanie-sleduet-udelyat--zastroyshchiku.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>27</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>28</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/b6f6f0b3475095f1406f6bf30d0eb018/5DA534E3/t51.2885-15/e35/70514472_144226220140497_5852513784993494726_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="При покупке недвижимости особое внимание следует уделять застройщику.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6824fa81746717bbf20b6514aabf6d64/5DA92963/t51.2885-15/e35/70514472_144226220140497_5852513784993494726_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="При покупке недвижимости особое внимание следует уделять застройщику.">
 								</div>
 								<div class="article-more__item-name">При покупке недвижимости особое внимание следует уделять застройщику.</div>
+							</a>
+							<a href="./segodnya-ves--put--na-rabotu-bezhal-za-avtobusom.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>20</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/9c3745b576e2f1097483c2bb0786fe16/5E264AF0/t51.2885-15/e35/70693920_552404355587173_7157225687476441678_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="Сегодня весь путь на работу бежал за автобусом.">
+								</div>
+								<div class="article-more__item-name">Сегодня весь путь на работу бежал за автобусом.</div>
 							</a>
 						</div>
 					</section>		
@@ -478,11 +496,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
