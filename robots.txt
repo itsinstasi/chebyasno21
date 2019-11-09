@@ -2,3 +2,5 @@
 Sitemap: https://chebyasno21.itsinsta.site//sitemap.xml
 Disallow: /main.html
 Disallow: /main
+Disallow: /stories.html
+Disallow: /stories
